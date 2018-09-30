@@ -89,7 +89,7 @@ public class Rational {
 	}
 
 	public Rational reciprocalOf() {
-		if (this.getDenominator() == 0) {
+		if (this.getNumerator() == 0) {
 			throw new ArithmeticException();
 		}
 		int new_denom = this.getNumerator();
