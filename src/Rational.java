@@ -75,7 +75,7 @@ public class Rational {
 			r.denom *= -1;
 			r.num *= -1;
 		}
-		int new_denom = Rational.lcm(this.denom, this.num);
+		int new_denom = Rational.lcm(this.denom, r.denom);
 		int new_nume = (new_denom / this.denom) * this.num + (new_denom / r.denom) * r.num;
 		return new Rational(new_nume, new_denom);
 	}
@@ -126,7 +126,7 @@ public class Rational {
 		Rational r4 = new Rational(9, -11);
 		Rational r5 = new Rational(0, 1);
 		System.out.println("r.getNumerator()=" + r.getNumerator());
-		// System.out.println("r.getDenominator()=" + r.getDenominator());
+		System.out.println("r.getDenominator()=" + r.getDenominator());
 		// System.out.println(new Rational(7, -5));
 		// System.out.println(new Rational(-7, -5));
 		// // Testing lcm
