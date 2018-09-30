@@ -118,40 +118,40 @@ public class Rational {
 		Rational r5 = new Rational(0, 1);
 		System.out.println("r.getNumerator()=" + r.getNumerator());
 		System.out.println("r.getDenominator()=" + r.getDenominator());
-		// Testing lcm
-		System.out.println("Rational.lcm(6, 15)=" + Rational.lcm(6, 15));
-		System.out.println("Rational.lcm(6, -15)=" + Rational.lcm(6, -15));
-		System.out.println("Rational.lcm(-6, 15)=" + Rational.lcm(-6, 15));
-		// Testing plus
-		System.out.println(r.plus(r2));
-		System.out.println(r.plus(r3));
-		System.out.println(r.plus(r4));
-		// Testing sum
-		System.out.println(Rational.sum(r, r2));
-		System.out.println(Rational.sum(r, r3));
-		System.out.println(Rational.sum(r, r4));
-		// Testing minus
-		System.out.println(r.minus(r2));
-		System.out.println(r.minus(r3));
-		System.out.println(r.minus(r4));
-		// Testing difference
-		System.out.println(Rational.difference(r, r2));
-		System.out.println(Rational.difference(r, r3));
-		System.out.println(Rational.difference(r, r4));
-		// testing reciprocalOf
-		System.out.println(r.reciprocalOf());
-		System.out.println(r2.reciprocalOf());
-		System.out.println(r3.reciprocalOf());
-		System.out.println(r4.reciprocalOf());
-		// System.out.println(r5.reciprocalOf());
-		// Testing dividedBy
-		System.out.println(r2.dividedBy(r));
-		System.out.println(r3.dividedBy(r));
-		System.out.println(r4.dividedBy(r));
-		// Testing quotient
-		System.out.println(Rational.quotient(r2, r));
-		System.out.println(Rational.quotient(r3, r));
-		System.out.println(Rational.quotient(r4, r));
+		// // Testing lcm
+		// System.out.println("Rational.lcm(6, 15)=" + Rational.lcm(6, 15));
+		// System.out.println("Rational.lcm(6, -15)=" + Rational.lcm(6, -15));
+		// System.out.println("Rational.lcm(-6, 15)=" + Rational.lcm(-6, 15));
+		// // Testing plus
+		// System.out.println(r.plus(r2));
+		// System.out.println(r.plus(r3));
+		// System.out.println(r.plus(r4));
+		// // Testing sum
+		// System.out.println(Rational.sum(r, r2));
+		// System.out.println(Rational.sum(r, r3));
+		// System.out.println(Rational.sum(r, r4));
+		// // Testing minus
+		// System.out.println(r.minus(r2));
+		// System.out.println(r.minus(r3));
+		// System.out.println(r.minus(r4));
+		// // Testing difference
+		// System.out.println(Rational.difference(r, r2));
+		// System.out.println(Rational.difference(r, r3));
+		// System.out.println(Rational.difference(r, r4));
+		// // testing reciprocalOf
+		// System.out.println(r.reciprocalOf());
+		// System.out.println(r2.reciprocalOf());
+		// System.out.println(r3.reciprocalOf());
+		// System.out.println(r4.reciprocalOf());
+		// // System.out.println(r5.reciprocalOf());
+		// // Testing dividedBy
+		// System.out.println(r2.dividedBy(r));
+		// System.out.println(r3.dividedBy(r));
+		// System.out.println(r4.dividedBy(r));
+		// // Testing quotient
+		// System.out.println(Rational.quotient(r2, r));
+		// System.out.println(Rational.quotient(r3, r));
+		// System.out.println(Rational.quotient(r4, r));
 
     }
 
