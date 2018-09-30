@@ -69,6 +69,10 @@ public class Rational {
 	public Rational plus(Rational r) {
 		int new_denom = lcm(this.getDenominator(), r.getDenominator());
 		int new_nume = (new_denom / this.getDenominator()) * this.getNumerator() + (new_denom / r.getDenominator()) * r.getNumerator();
+		if (new_denom < 0 && new_nume > 0) {
+			new_denom *= -1;
+			new_nume *= -1;
+		}
 		return new Rational(new_nume, new_denom);
 	}
 
@@ -79,6 +83,10 @@ public class Rational {
 	public Rational minus(Rational r) {
 		int new_denom = lcm(this.getDenominator(), r.getDenominator());
 		int new_nume = (new_denom / this.getDenominator()) * this.getNumerator() - (new_denom / r.getDenominator()) * r.getNumerator();
+		if (new_denom < 0 && new_nume > 0) {
+			new_denom *= -1;
+			new_nume *= -1;
+		}
 		return new Rational(new_nume, new_denom);
 	}
 
@@ -92,12 +100,21 @@ public class Rational {
 		}
 		int new_denom = this.getNumerator();
 		int new_nume = this.getDenominator();
+		if (new_denom < 0 && new_nume > 0) {
+			new_denom *= -1;
+			new_nume *= -1;
+		}
 		return new Rational(new_nume, new_denom);	
 	}
 
 	public Rational dividedBy(Rational r) {
-		return new Rational(this.num / r.num,
-		this.denom / r.denom);
+		int new_nume = this.num / r.num;
+		int new_denom = this.denom / r.denom;
+		if (new_denom < 0 && new_nume > 0) {
+			new_denom *= -1;
+			new_nume *= -1;
+		}
+		return new Rational(new_nume, new_denom);
 	}
 
 	public static Rational quotient(Rational a, Rational b) {
@@ -118,6 +135,9 @@ public class Rational {
 		Rational r5 = new Rational(0, 1);
 		System.out.println("r.getNumerator()=" + r.getNumerator());
 		System.out.println("r.getDenominator()=" + r.getDenominator());
+		// System.out.println(new Rational(-7, 5));
+		// System.out.println(new Rational(7, -5));
+		// System.out.println(new Rational(-7, -5));
 		// // Testing lcm
 		// System.out.println("Rational.lcm(6, 15)=" + Rational.lcm(6, 15));
 		// System.out.println("Rational.lcm(6, -15)=" + Rational.lcm(6, -15));
