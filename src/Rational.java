@@ -102,8 +102,7 @@ public class Rational {
 	}
 
 	public static Rational quotient(Rational a, Rational b) {
-		return new Rational(a.num / b.num,
-					a.denom / b.denom);
+		return a.dividedBy(b);
     }
     
     /** 
