@@ -4,7 +4,7 @@ Starter code for [lab01](https://ucsb-cs56-m18.github.io/lab/lab01/) for UCSB CS
 
 You should edit this README.md file to include a link to your javadoc instead of this javadoc:
 
-* Javadoc: https://ucsb-cs56-m18.github.io/STARTER_lab01/javadoc
+* Javadoc: https://github.com/TgWang1023/cs56lab01/tree/master/docs/javadoc
 
 Also, include the names and github ids of you and your pair partner if you work in a pair.
 
